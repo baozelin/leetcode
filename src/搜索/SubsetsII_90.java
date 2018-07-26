@@ -25,10 +25,27 @@ public class SubsetsII_90 {
 	            while(i<nums.length-1 && nums[i]==nums[i+1]) i++;  
 	        }
 	    }
+	    
+	    
+	    
+	    public void test(int num) {
+	    	//for(int i=0;i<=num;i++){
+	      if(num > 0) {
+	    	System.out.println("前面" + num);
+	            test(num-1);
+	           /// i = 0;
+	            System.out.println("中间：" + num);
+	            test(num-1);
+	            System.out.println("后面：" + num);
+	            
+	        }
+	    }
+	 //   }
  
 	    public static void main(String[]arg) {
 	    	SubsetsII_90 t = new SubsetsII_90();
 			 int[] S = new int[] {1,2,2};
 			 t.subsetsWithDup(S);
+			 t.test(5);
 		 }
 }
