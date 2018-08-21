@@ -47,5 +47,7 @@ public class SubsetsII_90 {
 			 int[] S = new int[] {1,2,2};
 			 t.subsetsWithDup(S);
 			 t.test(5);
+			 String tmp = "" + 'a';
+			 System.out.println(tmp.length()+","+ ('2'-'0'));
 		 }
 }
